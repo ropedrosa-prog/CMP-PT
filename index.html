@@ -65,15 +65,27 @@
         background: color-mix(in srgb, var(--accent) 6%, var(--surface));
       }
       .logo-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .logo-container img {
-    width: 25vw;
+    width: 33vw;
+    max-width: 360px;
+    min-width: 120px;
     height: auto;
     display: block;
-    margin: 0 auto;
+}
+
+.logo-container .subtitle {
+    margin-top: 12px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.1rem;
 }
       footer {
         margin-top: 40px;
@@ -86,9 +98,10 @@
   <body>
     <main>
       <header>
-        <div class="logo-container">
-    <p img src="logo.png" alt="Car Manager Pro PT Logo"><a class="subtitle">Car Manager Pro PT</p>
-</div>
+     <div class="logo-container">
+    <img src="logo.png" alt="Car Manager Pro PT Logo">
+    <p class="subtitle">Car Manager Pro PT</p>
+     </div>
         <h1>Política de Privacidade</h1>
         <p class="updated"><strong>Última atualização:</strong> 21 de julho de 2026</p>
       </header>
